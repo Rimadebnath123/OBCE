@@ -2,475 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" type="text/css" href="https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css">
-    <style>
-        .container {
-            display: flex;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-        #innerBox2 {
-            height: 930px;
-            overflow-y: scroll;
-        }
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+                rel="stylesheet">
 
-        .clear {
-            clear: both;
-        }
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-        .small-box h3,
-        .small-box p {
-            color: #FFF;
-        }
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        .bg-green:hover {
-            background: #15e82e !important;
-        }
-
-        .bg-yellow:hover {
-            background: #ffc60a !important;
-        }
-
-        .bg-red:hover {
-            background: red !important;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        .ccolr1,
-        .ccolr2 {
-            height: 30px;
-        }
-
-        .ccolr1 {
-            background-color: #f9f9f9;
-        }
-
-        .ccolr2 {
-            background-color: #f1f1f1;
-        }
-
-        .ccolr1 a,
-        .ccolr2 a {
-            display: block;
-            padding: 6px;
-        }
-    </style>
-    <script>
-        var myVar = setInterval(function () { myTimer() }, 1000);
-        function myTimer() {
-            var d = new Date();
-            var t = d.toLocaleTimeString();
-            document.getElementById("timeTable").innerHTML = t;
-        }
-        function myStopFunction() {
-            clearInterval(myVar);
-        }
-    </script>
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <!-- dashboard container start -->
-        <div class="clearfix">&nbsp;</div>
-        <div class="col-lg-9">
-            <div id="innerBox2">
-                <div class="row">
-
-                    <div class="col-lg-6">
-                        <h2 style="color:#000000;margin:0;padding:0;font-size:16px;">
-                            <img src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"> Dashboard
-                        </h2>
-                    </div>
-
-                    <div class="col-lg-6" style="float:  right">
-                        <div style="color:#FF0000;font-weight:bold;font-size:16px;">
-                            <div id="timeTable" style="text-align:  right">2:49:13 PM</div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-
-
-                    <div class="col-lg-12" style="    text-align: center;">
-                        <h3 style="padding:10px;color:#000000;">
-                            Welcome to <br> <span style="color:#FF0000;    font-weight: bold;
-        font-size: 18px;"> Pariseba Hub</span>
-                        </h3>
-                    </div>
-
-                    <div class="col-lg-12" style="    text-align: left;">
-                        <h3 style="padding:10px;color:#FFF;background: gray;">
-                            Centre ID: <span style="color:#FFF;">CBCE0181</span>
-                        </h3>
-                    </div>
-                    <div class="col-lg-3">
-                        &nbsp;
-                    </div>
-                    <form action="https://www.cbceindia.com/home" method="post" enctype="multipart/form-data">
-                        <div class="col-lg-6 col-xs-8">
-
-                            <input type="hidden" name="_token" value="IDLOcoFZhr6mzJM623IELBPc4aI3z2nVjnt3PSab">
-                            <input type="text" name="name" class="form-control"
-                                placeholder="Search By Name, Registration No, Phone No.">
-                            <br>
-                        </div>
-                        <div class="col-md-3 col-xs-3">
-                            <input type="submit" name="submit" value="Submit" class="btn btn-success">
-                        </div>
-                    </form>
-                    <div class="clear"></div>
-
-
-                    <div class="clear"></div>
-
-                    <div class="col-lg-4 col-xs-12 ">
-                        <div class="small-box bg-green">
-                            <div class="inner">
-                                <h3>1</h3>
-                                <p>Applied Student</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="https://www.cbceindia.com/allstudent" class="small-box-footer">More Info <i
-                                    class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="small-box bg-yellow">
-                            <div class="inner">
-                                <h3>0</h3>
-                                <p>Registered Student</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="https://www.cbceindia.com/reg_student" class="small-box-footer">More Info <i
-                                    class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="small-box bg-red">
-                            <div class="inner">
-                                <h3>0</h3>
-                                <p>Exam Completed Student</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="small-box bg-green">
-                            <div class="inner">
-                                <h3>26</h3>
-                                <p>Certified Students</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="https://www.cbceindia.com/st_cerficate" class="small-box-footer">More Info <i
-                                    class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="small-box bg-yellow">
-                            <div class="inner">
-                                <h3>0</h3>
-                                <p>Exam Notification</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="small-box bg-red">
-                            <div class="inner">
-                                <h3>-17.2</h3>
-                                <p>Main Balance</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="small-box bg-green">
-                            <div class="inner">
-                                <h3>0</h3>
-                                <p>SRB Balance</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="https://www.cbceindia.com/st_cerficate" class="small-box-footer">More Info <i
-                                    class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="small-box bg-yellow">
-                            <div class="inner">
-                                <h3>2</h3>
-                                <p>Total Sub Branch</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="https://www.cbceindia.com/subbranchlist" class="small-box-footer">More Info <i
-                                    class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="small-box bg-red">
-                            <div class="inner">
-                                <h3>0</h3>
-                                <p>Income From Sub Branch</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
-                            </div>
-                            <a href="" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-                <br>
-                <div class="col-sm-12 highlights" style="border: 1px solid;min-height: 220px;">
-                    <h4 style="text-align: center;">NewsFeed</h4>
-                    <div class="vticker" style="left: 0px; list-style: none; line-height: 17px; position: relative;">
-                        <ul style="margin: 0px; position: absolute; top: 0px;">
-                            <li>
-                                <p>Hard copies of certificates will not be sent from the new financial year i.e. 1st
-                                    April
-                                    2024.&nbsp; Contact 03824281052 for details</p>
-                            </li>
+        <ul id="menu-main-menu" class="menu">
+                <li id="menu-item-48" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a
+                                href="/">Home</a></li>
+                <li id="menu-item-49"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49">
+                        <a>About</a>
+                        <ul class="sub-menu">
+                                <li id="menu-item-52"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
+                                                href="http://localhost/obceeducation/about-us/">About Us</a></li>
+                                <li id="menu-item-51"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a
+                                                href="http://localhost/obceeducation/director-message/">Director Message</a>
+                                </li>
+                                <li id="menu-item-50"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a
+                                                href="http://localhost/obceeducation/bank-details/">Bank Details</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- dashboard container end -->
-        <!-- dashboard menu start -->
-        <div class="col-lg-3">
-            <div id="innerBox" style="padding: 0">
-                <table width="100%" style="font-size:15px;">
-
-                    <tbody>
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/home">Dashboard</a></td>
-                        </tr>
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/profile">My Profile</a></td>
-                        </tr>
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/updocument">Upload Document</a></td>
-                        </tr>
-
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a target="blank" href="https://www.cbceindia.com/usercertificate">Authorisation
-                                    Certificate</a></td>
-                        </tr>
-
-
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/contactdetail">Contact Details</a></td>
-                        </tr>
-
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/fdownload">Franchise Download</a></td>
-                        </tr>
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/addstudent">Student Application</a> </td>
-                        </tr>
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/allstudent">Applied Student</a>(1) </td>
-                        </tr>
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/inactive">Inactive Student</a>(0) </td>
-                        </tr>
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/reg_student">Registered Student</a>(0)</td>
-                        </tr>
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/examnotification">Examination Notification</a> (0)
-                            </td>
-                        </tr>
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/hallticket">Hall Ticket</a> </td>
-                        </tr>
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/hallticket1">Hall Ticket View</a> </td>
-                        </tr>
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/exammarks">Final Examination</a> </td>
-                        </tr>
-
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="#">Test Examination</a> </td>
-                        </tr>
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/examcomplate">Exam Completed Student</a> (0)</td>
-                        </tr>
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/st_cerficate">Certified Student</a>(26)</td>
-                        </tr>
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/payrequest">Payment Request</a></td>
-                        </tr>
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/accountinfo">Account Information</a></td>
-                        </tr>
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/message">Message Section</a></td>
-                        </tr>
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/postal">Postal or Courier Status</a></td>
-                        </tr>
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/order">Order List</a></td>
-                        </tr>
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/studentkit">Student Kit</a></td>
-                        </tr>
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/idea">Submit Your Idea</a></td>
-                        </tr>
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/routine">Students Routine</a></td>
-                        </tr>
-
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/attendance">Students Attendance</a></td>
-                        </tr>
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/spayment">Students Payment </a></td>
-                        </tr>
-
-
-                        <tr height="30" class="ccolr2">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/subbranchlist">Sub Branch List</a></td>
-                        </tr>
-
-
-
-
-
-
-
-                        <tr height="30" class="ccolr1">
-                            <td style="padding-left:6px;"><img
-                                    src="https://www.cbceindia.com/public/web/images/right-arrow.png" border="0"></td>
-                            <td><a href="https://www.cbceindia.com/logout" onclick="event.preventDefault();
-                                       document.getElementById('logout-form').submit();">Sign Out</a></td>
-                            <form id="logout-form" action="https://www.cbceindia.com/logout" method="POST"
-                                style="display: none;"></form>
-                            <input type="hidden" name="_token" value="IDLOcoFZhr6mzJM623IELBPc4aI3z2nVjnt3PSab">
-
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-        </div>
-        <!-- dashboard menu start -->
-        <div class="clearfix">&nbsp;</div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                </li>
+                <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a
+                                href="http://localhost/obceeducation/courses/">Courses</a></li>
+                <li id="menu-item-54"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54">
+                        <a>Student</a>
+                        <ul class="sub-menu">
+                                <li id="menu-item-57"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a
+                                                href="http://localhost/obceeducation/verification/">Verification</a></li>
+                                <li id="menu-item-56"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a
+                                                href="http://localhost/obceeducation/result/">Result</a></li>
+                                <li id="menu-item-55"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a
+                                                href="http://localhost/obceeducation/student-login/">Student Login</a></li>
+                        </ul>
+                </li>
+                <li id="menu-item-58"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58">
+                        <a>Franchise</a>
+                        <ul class="sub-menu">
+                                <li id="menu-item-61"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a
+                                                href="http://localhost/obceeducation/get-franchise/">Get Franchise</a></li>
+                                <li id="menu-item-60"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a
+                                                href="http://localhost/obceeducation/franchise-application/">Franchise
+                                                Application</a></li>
+                                <li id="menu-item-59"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a
+                                                href="http://localhost/obceeducation/center-login/">Center Login</a></li>
+                        </ul>
+                </li>
+                <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a
+                                href="http://localhost/obceeducation/download/">Download</a></li>
+                <li id="menu-item-62"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62"><a
+                                href="http://localhost/obceeducation/gallery/">Gallery</a>
+                        <ul class="sub-menu">
+                                <li id="menu-item-64"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64"><a
+                                                href="/gallery?type=photo">Photo Gallery</a></li>
+                                <li id="menu-item-65"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65"><a
+                                                href="/gallery?type=video">Video Gallery</a></li>
+                        </ul>
+                </li>
+                <li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a
+                                href="http://localhost/obceeducation/regional-center/">Regional Center</a></li>
+                <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a
+                                href="http://localhost/obceeducation/job-portal/">Job Portal</a></li>
+        </ul>
 </body>
 
 </html>
