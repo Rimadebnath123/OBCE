@@ -11373,3 +11373,30 @@ body {
 .highlight {
   color: #ff0000;
 }
+
+.course-container {
+  background-color: #F2F1F8;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.course-heading {
+  color: #333;
+}
+
+.course-details {
+  padding: 15px;
+  text-align: left;
+}
+
+
+.course-details span {
+  color: #0066FF;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
