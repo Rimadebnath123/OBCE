@@ -103,12 +103,16 @@ p {
     background-image: linear-gradient(to right, #2989cc 50%, #72b1de 65%, #f8fbfd 100%);
     border-bottom: 1px solid #222;
     line-height: 40px; */
-  background: url(../img/cbcelogo.jpg), no-repeat center center;
+  /* background: url(../img/header.mp4); */
   background-size: cover;
 }
 
+video {
+  width: 1340px;
+}
+
 .top-bar1 {
-  background: url(../img/MiddleBanner.jpg), no-repeat center center;
+  background: url(../img/h-header.jpeg), no-repeat center center;
   background-size: cover;
 }
 
@@ -11366,3 +11370,6 @@ body {
   padding: 20px;
 }
 
+.highlight {
+  color: #ff0000;
+}
