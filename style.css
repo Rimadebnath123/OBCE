@@ -27,6 +27,7 @@
   --danger: #dc3545;
   --light: #FFFFFF;
   --dark: #44425A;
+  --warning1: hsla(45, 100%, 51%, 0.477);
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1598,7 +1599,7 @@ pre code {
   }
 
   .offset-lg-2 {
-    margin-left: 16.66667%;
+    margin-left: 12.66667%;
   }
 
   .offset-lg-3 {
@@ -11363,11 +11364,12 @@ body {
 .containerapp {
   width: 80%;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
   border: 2px solid #000;
   padding: 20px;
+  background-color: hsla(45, 100%, 51%, 0.477);
 }
 
 .highlight {
