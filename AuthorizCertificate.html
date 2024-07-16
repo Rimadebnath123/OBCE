@@ -23,23 +23,50 @@
         .name {
             position: absolute;
             top: 487px;
-            left: 325px;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 20px;
+            text-align: center;
         }
 
         .center-name {
             position: absolute;
             top: 540px;
-            right: 192px;
-            font-size: 19px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: calc(21px - 0.2vw);
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90%;
         }
 
         .situated {
             position: absolute;
             top: 590px;
-            right: 185px;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 21px;
+            text-align: center;
+            max-width: 95%;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
         }
+
+        /* .situated {
+            position: absolute;
+            top: 590px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: calc(23px - 0.2vw);
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90%;
+        } */
 
         .date {
             position: absolute;
@@ -65,22 +92,41 @@
             .name {
                 position: absolute;
                 top: 410px;
-                left: 280px;
+                left: 50%;
+                transform: translateX(-50%);
                 font-size: 19px;
+                text-align: center;
             }
 
             .center-name {
                 position: absolute;
                 top: 455px;
-                right: 169px;
+                left: 50%;
+                transform: translateX(-50%);
                 font-size: 19px;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 90%;
             }
 
             .situated {
                 position: absolute;
                 top: 492px;
-                right: 145px;
-                font-size: 22px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 21px;
+                text-align: center;
+                /* white-space: nowrap; */
+                /* overflow: hidden; */
+                /* text-overflow: ellipsis; */
+                max-width: 90%;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                hyphens: auto;
+
+
             }
 
             .date {
@@ -105,7 +151,8 @@
             <h4>Oriental Board Of Computer Education(Shason)</h4>
         </div>
         <div class="situated">
-            <h4>Shason, Sardarhati, North 24 Parganas,743423</h4>
+            <h4>Shason, Sardarhati, North 24 Parganas,743423
+            </h4>
         </div>
         <div class="date">
             <h4>15-06-2024</h4>
